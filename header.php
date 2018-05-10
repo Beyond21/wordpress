@@ -1,9 +1,13 @@
 <?php
     //    find out which folder you are using
-        $dir    = '../comparexchanges.com/php-files/';
-//         $files1 = scandir($dir);
-//          var_dump($files1);
-include($dir.'set-uid.php');
+        $dir    = '../wpsite/wp-content/themes/newspaper';
+        // $files1 = scandir($dir);
+        //  var_dump($files1);
+
+if ((@include($dir.'/php-files/set-uid.php')) === false) {
+    echo "set-uid.php not loaded!";
+}
+
 
         ?>
 

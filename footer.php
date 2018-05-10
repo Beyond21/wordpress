@@ -2,6 +2,7 @@
 
 <?php 
 
+
 if (td_util::get_option('tds_footer_instagram') == 'show') { ?>
 
     <div class="td-main-content-wrap td-footer-instagram-container td-container-wrap <?php echo td_util::get_option('td_full_footer_instagram'); ?>">
@@ -93,7 +94,7 @@ if ( $footer_page instanceof WP_Post ) {
 
 <?php wp_footer(); ?>
 
- <script type="text/javascript" src=<?php $dir ?>"/js-files/script.js"></script>
+ <script type="text/javascript" src="/wpsite/wp-content/themes/newspaper/js-files/script.js"></script>
 
 </body>
 </html>
